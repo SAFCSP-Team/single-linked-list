@@ -24,7 +24,7 @@ Create a display() method, to print the content of the linked list.
   int data;
   Node next;
 
-  Node(int d) {
+public Node(int d) {
   data = d;
   next = null;
     }
