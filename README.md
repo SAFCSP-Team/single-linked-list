@@ -11,7 +11,7 @@ Use the provided resources for a better understanding.
 
 ### Problem
 
-Create a display() method, to print the content of the linked list.
+Create a `display()` method to print the content of the linked list.
 
 ### Implementation
 
@@ -20,19 +20,19 @@ Create a display() method, to print the content of the linked list.
 
 ```java
 
- public class Node {
+public class Node {
   int data;
   Node next;
 
-public Node(int d) {
+ public Node(int d) {
   data = d;
   next = null;
-    }
+  }
 
- }
+}
 
 public class LinkedList {
-    Node head;
+ Node head;
 
  /* your code here */
 
@@ -40,14 +40,15 @@ public class LinkedList {
 
 
 public class Main {
-public static void main(String[] args) {
- LinkedList list = new LinkedList();
- list.head = new Node(100);
-  Node second = new Node(200);
-  Node third = new Node(300);
-  list.head.next = second;
-  second.next = third; 
-  list.display();
-    }
+ public static void main(String[] args) {
+  LinkedList list = new LinkedList();
+  list.head = new Node(100);
+   Node second = new Node(200);
+   Node third = new Node(300);
+   list.head.next = second;
+   second.next = third; 
+   list.display();
+     }
 }
+
 ```
