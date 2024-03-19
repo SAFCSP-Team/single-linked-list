@@ -1,25 +1,25 @@
-
-public class Node {
-  int data;
-  Node next;
-
- public Node(int d) {
-  data = d;
-  next = null;
-  }
-
-}
-
 public class LinkedList {
  Node head;
 
- /* your code here */
+ public void insert(int data){
+  Node newNode = new Node(data);
+  if(this.head == null){
+    this.head = newNode;
+  }else{
+    newNode.next = this.head;
+    this.head = newNode;
+  }
+  
+ }
+
+ public void display(){
+  Node current = head;
+  while (current != null){
+    System.out.println(current.data);
+    current = current.next;
+  } 
+ }
 
 }
 
 
-public class Main {
- public static void main(String[] args) {
-
-     }
-}
